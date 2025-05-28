@@ -3,7 +3,10 @@
 int main() {
 	Array<int> a(5);
 	a[0] = 42;
-	a[1] = 99;
+	a[1] = 91;
+	a[2] = 92;
+	a[3] = 93;
+	a[4] = 94;
 
 	Array<int> b = a;
 	b[1] = 123;
@@ -21,7 +24,7 @@ int main() {
 	}
 	catch (std::exception& e)
 	{
-		std::cerr << "Eccezione catturata: " << e.what() << '\n';
+		std::cerr << e.what() << '\n';
 	}
 	return 0;
 }
